@@ -152,6 +152,11 @@ def run_eda_app():
             fig10=plt.figure(figsize=(10,10))
             sns.heatmap(cov_mat,annot=True)
             st.pyplot(fig10)
+         
+        
+
+
+       
        
        
             
