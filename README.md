@@ -48,13 +48,13 @@ b)  Model performance
 a)  Model deployment in Heroku platform
 
 
-1)  **[Problem Definition:]{.ul}**
+1)  **Problem Definition:**
 
 Credit risk analysis is a form of analysis performed by a credit analyst
 on potential borrowers to determine their ability to meet debt
 obligations.
 
-a)  **[Problem statement]{.ul}**:
+a)  **Problem statement**:
 
 -   When a customer approaches a bank for loan, the bank has to look
     into several factors to decide whether the person is capable of
@@ -83,7 +83,7 @@ ii. **[Market Risk]{.ul}**: This risk arises because of the volatility
     exchange rate.
 
 
-b)  **[Goal]{.ul}**:
+b)  **Goal**:
 
 By understanding the relationship between the underlying factors that
 significantly affect a person's credit score and therefore impacts the
@@ -97,7 +97,7 @@ The single biggest reason for PSBs to post a 57,832-crore turnaround -
 from a loss of 26,015 crore in Y20 to a combined profit of 31,817 crore
 - was the end of their legacy bad loan problem. (2021)
 
-**[2) Data understanding]{.ul}**
+**2) Data understanding**
 
 -   Data contain 100000 rows and 19 columns.
 
@@ -177,9 +177,9 @@ from a loss of 26,015 crore in Y20 to a combined profit of 31,817 crore
                                  the subject of the lien.
   -----------------------------------------------------------------------
 
-3)  **[Exploratory Data Analysis]{.ul}**
+3)  **Exploratory Data Analysis**
 
-> [a) Missing value treatment]{.ul}
+> a) Missing value treatment
 >
 > At initial stage the number of missing values in each column and their
 > respective percentage with respect to the total length of data is
@@ -192,7 +192,7 @@ completely null values. (Table-03)
 
 ![](.//media/image2.png)
 
-**[How missing values are handled?]{.ul}**
+**How missing values are handled?**
 
 -   At first, all the rows which have missing value (zero information)
     are dropped.
@@ -219,7 +219,7 @@ corresponding to loan status.
 
 > ![](.//media/image4.png)
 
-**[Cleaning of Credit Score column]{.ul}**
+**Cleaning of Credit Score column**
 
 Credit score is a 3-digit number that explains the customer liability
 (more the value more liable), but in our dataset we found credit score
@@ -234,7 +234,7 @@ all 4-digit number.
 
 ![](.//media/image6.png)
 
-[Missing values in Categorical features]{.ul}
+Missing values in Categorical features
 
 ![](.//media/image7.png)
 ![](.//media/image8.png)
@@ -243,7 +243,7 @@ all 4-digit number.
 For all categorical features missing values replaced
 with the mode value after observing the count plots of each feature.
 
-**[b) Outlier treatment]{.ul}**
+**b) Outlier treatment**
 
 Here we did not take 3 sigma rules or IQR technique to remove the
 outliers, instead through visualization, if any data found completely
@@ -398,7 +398,7 @@ And deployed in local machine, using Streamlit.
 ![](.//media/image31.png)
 
 App link:
-<https://loan-status-prediction->[326315.el.r.appspot.com/]{.ul}
+<https://loan-status-prediction-326315.el.r.appspot.com/>
 
 **Conclusion**
 
