@@ -2,33 +2,23 @@
 
 1)  **Problem definition**
 
-```{=html}
-<!-- -->
-```
+
 a)  Problem statement
 
 b)  Goal
 
 c)  Motivation
 
-```{=html}
-<!-- -->
-```
+
 2)  **Data Understanding**
 
-```{=html}
-<!-- -->
-```
+
 a)  Feature understanding
 
-```{=html}
-<!-- -->
-```
+
 3)  **Exploratory Data Analysis**
 
-```{=html}
-<!-- -->
-```
+
 a)  Missing value treatment
 
 b)  Outlier treatment
@@ -43,31 +33,21 @@ f)  Handling imbalance of data
 
 g)  EDA on cleaned data
 
-```{=html}
-<!-- -->
-```
+
 4)  **Modelling**
 
-```{=html}
-<!-- -->
-```
+
 a)  Model used
 
 b)  Model performance
 
-```{=html}
-<!-- -->
-```
+
 5)  **Model deployment**
 
-```{=html}
-<!-- -->
-```
+
 a)  Model deployment in Heroku platform
 
-```{=html}
-<!-- -->
-```
+
 1)  **[Problem Definition:]{.ul}**
 
 Credit risk analysis is a form of analysis performed by a credit analyst
@@ -102,9 +82,7 @@ ii. **[Market Risk]{.ul}**: This risk arises because of the volatility
     of market, variation of different market behaviours like inflation,
     exchange rate.
 
-```{=html}
-<!-- -->
-```
+
 b)  **[Goal]{.ul}**:
 
 By understanding the relationship between the underlying factors that
@@ -207,13 +185,12 @@ from a loss of 26,015 crore in Y20 to a combined profit of 31,817 crore
 > respective percentage with respect to the total length of data is
 > given in table_02
 >
-> ![](.//media/image1.png){width="5.55in" height="1.5361111111111112in"}
+> ![](.//media/image1.png)
 
 Apart from missing values in each column there are some rows which have
 completely null values. (Table-03)
 
-![](.//media/image2.png){width="7.834027777777778in"
-height="2.140972222222222in"}
+![](.//media/image2.png)
 
 **[How missing values are handled?]{.ul}**
 
@@ -223,9 +200,7 @@ height="2.140972222222222in"}
 -   All features divided into categorical and numerical. Each features
     type treated separately.
 
-```{=html}
-<!-- -->
-```
+
 -   For each numerical feature we plot the distribution plots to
     > visualize the normality of feature, if feature follows near normal
     > distribution missing values in that column replaced by mean
@@ -237,14 +212,12 @@ height="2.140972222222222in"}
     > these columns is significantly different for different loan
     > status.
 
-> ![](.//media/image3.png){width="3.3582294400699912in"
-> height="0.5982600612423447in"}
+> ![](.//media/image3.png)
 
 So, the missing values in these two columns replaced with mean values
 corresponding to loan status.
 
-> ![](.//media/image4.png){width="4.083333333333333in"
-> height="2.96875in"}
+> ![](.//media/image4.png)
 
 **[Cleaning of Credit Score column]{.ul}**
 
@@ -252,24 +225,22 @@ Credit score is a 3-digit number that explains the customer liability
 (more the value more liable), but in our dataset we found credit score
 value contain 4-digit number also.
 
-> ![](.//media/image5.png){width="4.708333333333333in"
-> height="2.8958333333333335in"}
+> ![](.//media/image5.png)
 
 4-digit numbers are strange in case of credit score column, with keen
 observation we found that all digit number ends with '0', so we think
 that this might be typo error so we just dropped the 0 in unit place for
 all 4-digit number.
 
-![](.//media/image6.png){width="4.661938976377953in"
-height="3.3333333333333335in"}
+![](.//media/image6.png)
 
 [Missing values in Categorical features]{.ul}
 
-![](.//media/image7.png){width="3.4in"
-height="1.75in"}![](.//media/image8.png){width="3.35in"
-height="1.775in"}![](.//media/image9.png){width="3.4in"
-height="1.5083333333333333in"}![](.//media/image10.png){width="3.3333333333333335in"
-height="1.45in"}For all categorical features missing values replaced
+![](.//media/image7.png)
+![](.//media/image8.png)
+![](.//media/image9.png)
+![](.//media/image10.png)
+For all categorical features missing values replaced
 with the mode value after observing the count plots of each feature.
 
 **[b) Outlier treatment]{.ul}**
@@ -279,8 +250,7 @@ outliers, instead through visualization, if any data found completely
 apart from the group those observations are dropped thus handled the
 outliers.
 
-![](.//media/image11.png){width="4.291666666666667in"
-height="3.6791666666666667in"}
+![](.//media/image11.png)
 
 **C) Statistical tests**
 
@@ -298,8 +268,7 @@ height="3.6791666666666667in"}
 > Based on the result obtained from the test we found that each
 > categorical variable related to the target variable.
 >
-> ![](.//media/image12.png){width="4.586111111111111in"
-> height="1.1819870953630796in"}
+> ![](.//media/image12.png)
 
 **d) Categorical feature handling**
 
@@ -323,16 +292,14 @@ height="3.6791666666666667in"}
 > different categories of the target variable then the data is said to
 > be imbalanced. In this work also dataset was imbalanced.
 
-![](.//media/image13.png){width="6.268055555555556in"
-height="2.6909722222222223in"}
+![](.//media/image13.png)
 
 This imbalance of the data is handled by using **SMOTE** technique
 available in imblean.oversampling module, which works on the basis of
 KMeans clustering thus adding data to the original data to make it
 balanced.
 
-> ![](.//media/image14.png){width="4.333333333333333in"
-> height="2.1416666666666666in"}
+> ![](.//media/image14.png)
 
 **h). EDA on cleaned data**
 
@@ -340,16 +307,13 @@ balanced.
 > features in the cleaned data, python external library Dataprep is used
 > some of the snippets from the result are given below
 >
-> ![](.//media/image15.png){width="6.268055555555556in" height="3.0in"}
+> ![](.//media/image15.png)
 
-![](.//media/image16.png){width="6.268055555555556in"
-height="3.73125in"}
+![](.//media/image16.png)
 
-![](.//media/image17.png){width="6.268055555555556in"
-height="3.4402777777777778in"}
+![](.//media/image17.png)
 
-![](.//media/image18.png){width="6.268055555555556in"
-height="3.390972222222222in"}
+![](.//media/image18.png)
 
 4)  **Modelling**
 
@@ -360,8 +324,7 @@ height="3.390972222222222in"}
 > such as RandomForest, AdaBoost, Grdadientboost and XgBoost. The
 > pictorial representation of models used is given in below figure:
 >
-> ![](.//media/image19.png){width="5.783333333333333in"
-> height="3.4270833333333335in"}
+> ![](.//media/image19.png)
 
 b)  **Performance of each model**
 
@@ -374,7 +337,7 @@ b)  **Performance of each model**
 > given in terms of accuracy and roc_auc score in below table. Darker
 > the colour more is the accuracy.
 
-![](.//media/image20.jpg){width="5.275in" height="5.784722222222222in"}
+![](.//media/image20.jpg)
 
 > Among all models **Xgboostclassifier** is performing best. So, we will
 > consider this model for further hyperparameter tuning.
@@ -387,14 +350,11 @@ c)  **Hyper Parameter Tuning for Best Models**
 > built using all features along with Hyper parameters based on
 > Randomized search.
 
-![](.//media/image21.jpg){width="4.166666666666667in"
-height="2.066666666666667in"}
-
+![](.//media/image21.jpg)
 **Fig-09: Confusion matrix**
 
-![](.//media/image22.png){width="1.9222178477690288in"
-height="1.3798611111111112in"}![](.//media/image23.png){width="3.2333333333333334in"
-height="1.6743055555555555in"}
+![](.//media/image22.png)
+![](.//media/image23.png)
 
 **Fig-10: Hyper parameters Fig-11: Classification Report**
 
@@ -415,14 +375,11 @@ height="1.6743055555555555in"}
 > performance of XgBoost classifier in terms of confusion metrics and
 > classification report is given below
 >
-> ![](.//media/image24.png){width="4.083333333333333in"
-> height="2.7298873578302714in"}
+> ![](.//media/image24.png)
 >
-> ![](.//media/image25.png){width="4.666666666666667in"
-> height="1.7839206036745408in"}
+> ![](.//media/image25.png)
 
-![](.//media/image26.png){width="3.2243055555555555in"
-height="3.908333333333333in"}
+![](.//media/image26.png)
 
 5)  **Model deployment**
 
@@ -430,18 +387,15 @@ We have taken stacking classifier with base learners as Random Forest
 and Decision Tree, and final estimator as GradientBoostingClassifier.
 And deployed in local machine, using Streamlit.
 
-![](.//media/image27.png){width="6.568023840769904in"
-height="3.2083333333333335in"}
+![](.//media/image27.png)
 
-![](.//media/image28.png){width="6.268055555555556in"
-height="3.06875in"}
+![](.//media/image28.png)
 
-![](.//media/image29.png){width="6.225in" height="3.3998873578302713in"}
+![](.//media/image29.png)
 
-![](.//media/image30.png){width="6.632638888888889in" height="4.05in"}
+![](.//media/image30.png)
 
-![](.//media/image31.png){width="6.632281277340333in"
-height="3.8583333333333334in"}
+![](.//media/image31.png)
 
 App link:
 <https://loan-status-prediction->[326315.el.r.appspot.com/]{.ul}
