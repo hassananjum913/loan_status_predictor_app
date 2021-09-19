@@ -1,4 +1,4 @@
-**[Content]{.ul}**
+**Content**
 
 1)  **Problem definition**
 
