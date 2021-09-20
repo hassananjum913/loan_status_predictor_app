@@ -383,9 +383,8 @@ c)  **Hyper Parameter Tuning for Best Models**
 
 5)  **Model deployment**
 
-We have taken stacking classifier with base learners as Random Forest
-and Decision Tree, and final estimator as GradientBoostingClassifier.
-And deployed in local machine, using Streamlit.
+We have taken XgBoost  classfier with selective features as our final model, created an Ui framework for prediction 
+and deployed in local machine and GCP , using Streamlit and GCP app engine and SDK.
 
 ![](.//media/image27.png)
 
