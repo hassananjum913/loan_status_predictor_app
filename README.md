@@ -45,7 +45,7 @@ b)  Model performance
 5)  **Model deployment**
 
 
-a)  Model deployment in Heroku platform
+a)  Model deployment in GCP platform
 
 
 1)  **Problem Definition:**
